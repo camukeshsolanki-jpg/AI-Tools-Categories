@@ -61,10 +61,11 @@
 
   .tool-card {
     background: #f1f1f1;
-    margin: 8px 0;
+    margin: 10px 0;
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
+    text-align: center;
     transition: transform 0.2s, background 0.2s;
   }
 
@@ -73,18 +74,25 @@
     transform: translateY(-3px);
   }
 
+  .tool-card img {
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 8px;
+  }
+
   .tool-card a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
     display: block;
+    margin-bottom: 5px;
   }
 
   .tool-card span {
     display: block;
     font-size: 0.85rem;
     color: #555;
-    margin-top: 3px;
+    margin-top: 2px;
   }
 
   .tags {
@@ -115,105 +123,89 @@
 
 <div class="matrix">
 
-  <!-- Presentation -->
-  <div class="category">
-    <h2 class="presentation">Presentation</h2>
-    <div class="tool-card" data-name="Prezi AI" data-categories="Presentation">
-      <a href="#">Prezi AI</a>
-      <span>Interactive presentations</span>
-      <div class="tags"><span class="tag">Presentation</span></div>
-    </div>
-    <div class="tool-card" data-name="Gamma" data-categories="Presentation">
-      <a href="#">Gamma</a>
-      <span>AI-powered slide decks</span>
-      <div class="tags"><span class="tag">Presentation</span></div>
-    </div>
-    <div class="tool-card" data-name="Tome" data-categories="Presentation">
-      <a href="#">Tome</a>
-      <span>Visual storytelling & slides</span>
-      <div class="tags"><span class="tag">Presentation</span></div>
-    </div>
-    <div class="tool-card" data-name="Canva AI" data-categories="Presentation,Images,Marketing">
-      <a href="#">Canva AI</a>
-      <span>Templates & AI design</span>
-      <div class="tags">
-        <span class="tag">Presentation</span>
-        <span class="tag">Images</span>
-        <span class="tag">Marketing</span>
-      </div>
-    </div>
-    <div class="tool-card" data-name="PowerPoint Designer" data-categories="Presentation">
-      <a href="#">PowerPoint Designer</a>
-      <span>Automatic slide design</span>
-      <div class="tags"><span class="tag">Presentation</span></div>
-    </div>
-    <div class="tool-card" data-name="Google Slides" data-categories="Presentation">
-      <a href="#">Google Slides</a>
-      <span>AI layout suggestions</span>
-      <div class="tags"><span class="tag">Presentation</span></div>
-    </div>
-    <div class="tool-card" data-name="Durable" data-categories="Presentation,Marketing,Images,Websites">
-      <a href="#">Durable</a>
-      <span>Quick AI pitch decks & websites</span>
-      <div class="tags">
-        <span class="tag">Presentation</span>
-        <span class="tag">Marketing</span>
-        <span class="tag">Images</span>
-        <span class="tag">Websites</span>
-      </div>
-    </div>
+<!-- ================== Presentation ================== -->
+<div class="category">
+  <h2 class="presentation">Presentation</h2>
+
+  <div class="tool-card" data-name="Prezi AI" data-categories="Presentation">
+    <img src="https://via.placeholder.com/80?text=Prezi" alt="Prezi AI Logo">
+    <a href="https://prezi.com" target="_blank">Prezi AI</a>
+    <span>Interactive presentations</span>
+    <div class="tags"><span class="tag">Presentation</span></div>
   </div>
 
-  <!-- Video / Animation -->
-  <div class="category">
-    <h2 class="video">Video / Animation</h2>
-    <div class="tool-card" data-name="InVideo" data-categories="Video,Marketing">
-      <a href="#">InVideo</a>
-      <span>Script-to-video templates</span>
-      <div class="tags"><span class="tag">Video</span><span class="tag">Marketing</span></div>
-    </div>
-    <div class="tool-card" data-name="Animaker" data-categories="Video,Marketing">
-      <a href="#">Animaker</a>
-      <span>Animated videos</span>
-      <div class="tags"><span class="tag">Video</span><span class="tag">Marketing</span></div>
-    </div>
-    <div class="tool-card" data-name="Pictory AI" data-categories="Video">
-      <a href="#">Pictory AI</a>
-      <span>Articles to videos</span>
-      <div class="tags"><span class="tag">Video</span></div>
-    </div>
-    <div class="tool-card" data-name="HeyGen" data-categories="Video">
-      <a href="#">HeyGen</a>
-      <span>AI avatars & videos</span>
-      <div class="tags"><span class="tag">Video</span></div>
-    </div>
-    <div class="tool-card" data-name="Renderforest" data-categories="Video,Marketing,Images">
-      <a href="#">Renderforest</a>
-      <span>Branding videos & visuals</span>
-      <div class="tags"><span class="tag">Video</span><span class="tag">Marketing</span><span class="tag">Images</span></div>
-    </div>
-    <div class="tool-card" data-name="Veo 3" data-categories="Video">
-      <a href="#">Veo 3</a>
-      <span>AI video creation</span>
-      <div class="tags"><span class="tag">Video</span></div>
-    </div>
-    <div class="tool-card" data-name="CodeDesign.ai" data-categories="Video,Marketing,Images">
-      <a href="#">CodeDesign.ai</a>
-      <span>Video + marketing content</span>
-      <div class="tags"><span class="tag">Video</span><span class="tag">Marketing</span><span class="tag">Images</span></div>
-    </div>
+  <div class="tool-card" data-name="Gamma" data-categories="Presentation">
+    <img src="https://via.placeholder.com/80?text=Gamma" alt="Gamma Logo">
+    <a href="https://gamma.app" target="_blank">Gamma</a>
+    <span>AI-powered slide decks</span>
+    <div class="tags"><span class="tag">Presentation</span></div>
   </div>
 
-  <!-- Audio / Music -->
-  <div class="category">
-    <h2 class="audio">Audio / Music</h2>
-    <div class="tool-card" data-name="ElevenLabs" data-categories="Audio">
-      <a href="#">ElevenLabs</a>
-      <span>AI voice synthesis</span>
-      <div class="tags"><span class="tag">Audio</span></div>
-    </div>
-    <div class="tool-card" data-name="Suno.ai" data-categories="Audio">
-      <a href="#">Suno.ai</a>
-      <span>AI-generated music</span>
-      <div class="tags"><span class="tag">Audio</span></div>
-    </div
+  <div class="tool-card" data-name="Tome" data-categories="Presentation">
+    <img src="https://via.placeholder.com/80?text=Tome" alt="Tome Logo">
+    <a href="https://tome.app" target="_blank">Tome</a>
+    <span>Visual storytelling & slides</span>
+    <div class="tags"><span class="tag">Presentation</span></div>
+  </div>
+
+  <div class="tool-card" data-name="Canva AI" data-categories="Presentation,Images,Marketing">
+    <img src="https://via.placeholder.com/80?text=Canva" alt="Canva AI Logo">
+    <a href="https://www.canva.com" target="_blank">Canva AI</a>
+    <span>Templates & AI design</span>
+    <div class="tags"><span class="tag">Presentation</span><span class="tag">Images</span><span class="tag">Marketing</span></div>
+  </div>
+
+  <div class="tool-card" data-name="PowerPoint Designer" data-categories="Presentation">
+    <img src="https://via.placeholder.com/80?text=PowerPoint" alt="PowerPoint Logo">
+    <a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint" target="_blank">PowerPoint Designer</a>
+    <span>Automatic slide design</span>
+    <div class="tags"><span class="tag">Presentation</span></div>
+  </div>
+
+  <div class="tool-card" data-name="Google Slides" data-categories="Presentation">
+    <img src="https://via.placeholder.com/80?text=Slides" alt="Google Slides Logo">
+    <a href="https://slides.google.com" target="_blank">Google Slides</a>
+    <span>AI layout suggestions</span>
+    <div class="tags"><span class="tag">Presentation</span></div>
+  </div>
+
+  <div class="tool-card" data-name="Durable" data-categories="Presentation,Marketing,Images,Websites">
+    <img src="https://via.placeholder.com/80?text=Durable" alt="Durable Logo">
+    <a href="https://durable.co" target="_blank">Durable</a>
+    <span>Quick AI pitch decks & websites</span>
+    <div class="tags"><span class="tag">Presentation</span><span class="tag">Marketing</span><span class="tag">Images</span><span class="tag">Websites</span></div>
+  </div>
+
+</div>
+
+<!-- ================== Video / Animation ================== -->
+<div class="category">
+  <h2 class="video">Video / Animation</h2>
+
+  <div class="tool-card" data-name="InVideo" data-categories="Video,Marketing">
+    <img src="https://via.placeholder.com/80?text=InVideo" alt="InVideo Logo">
+    <a href="https://invideo.io" target="_blank">InVideo</a>
+    <span>Script-to-video templates</span>
+    <div class="tags"><span class="tag">Video</span><span class="tag">Marketing</span></div>
+  </div>
+
+  <div class="tool-card" data-name="Animaker" data-categories="Video,Marketing">
+    <img src="https://via.placeholder.com/80?text=Animaker" alt="Animaker Logo">
+    <a href="https://www.animaker.com" target="_blank">Animaker</a>
+    <span>Animated videos</span>
+    <div class="tags"><span class="tag">Video</span><span class="tag">Marketing</span></div>
+  </div>
+
+  <div class="tool-card" data-name="Pictory AI" data-categories="Video">
+    <img src="https://via.placeholder.com/80?text=Pictory" alt="Pictory AI Logo">
+    <a href="https://pictory.ai" target="_blank">Pictory AI</a>
+    <span>Articles to videos</span>
+    <div class="tags"><span class="tag">Video</span></div>
+  </div>
+
+  <div class="tool-card" data-name="HeyGen" data-categories="Video">
+    <img src="https://via.placeholder.com/80?text=HeyGen" alt="HeyGen Logo">
+    <a href="https://heygen.com" target="_blank">HeyGen</a>
+    <span>AI avatars & videos</span>
+    <div class="tags"><span class="tag">Video</span></div>
+ 
