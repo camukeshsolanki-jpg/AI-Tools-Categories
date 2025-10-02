@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Tools Matrix</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #searchInput {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+
+  .matrix {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .category {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+  }
+
+  .category h2 {
+    text-align: center;
+    margin: -15px -15px 15px -15px;
+    padding: 10px;
+    border-radius: 12px 12px 0 0;
+    color: #fff;
+    font-size: 1.1rem;
+  }
+
+  /* Category Colors */
+  .presentation { background: #4A90E2; }
+  .video { background: #50E3C2; }
+  .audio { background: #F5A623; }
+  .images { background: #9013FE; }
+  .writing { background: #7ED321; }
+  .marketing { background: #D0021B; }
+  .automation { background: #F8E71C; color: #333; }
+
+  .tool-card {
+    background: #f1f1f1;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+  }
+
+  .tool-card:hover {
+    background: #e0f0ff;
+    transform: translateY(-3px);
+  }
+
+  .tool-card a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+  }
+
+  .tool-card span {
+    display: block;
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 3px;
+  }
+
+  .tags {
+    margin-top: 5px;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    background: #ddd;
+    color: #333;
+    padding: 2px 6px;
+    margin: 2px 2px 0 0;
+    border-radius: 5px;
+  }
+
+  @media(max-width: 768px){
+    .matrix {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>AI Tools Matrix</h1>
+<input type="text" id="searchInput" placeholder="Search for tools or categories...">
+
+<div class="matrix">
+
+  <!-- Presentation -->
+  <div class="category">
+    <h2 class="presentation">Presentation</h2>
+    <div class="tool-card" data-name="Prezi AI" data-categories="Presentation">
+      <a href="#">Prezi AI</a>
+      <span>Interactive presentations</span>
+      <div class="tags"><span class="tag">Presentation</span></div>
+    </div>
+    <div class="tool-card" data-name="Gamma" data-categories="Presentation">
+      <a href="#">Gamma</a>
+      <span>AI-powered slide decks</span>
+      <div class="tags"><span class="tag">Presentation</span></div>
+    </div>
+    <div class="tool-card" data-name="Tome" data-categories="Presentation">
+      <a href="#">Tome</a>
+      <span>Visual storytelling & slides</span>
+      <div class="tags"><span class="tag">Presentation</span></div>
+    </div>
+    <div class="tool-card" data-name="Canva AI" data-categories="Presentation,Images,Marketing">
+      <a href="#">Canva AI</a>
+      <span>Templates & AI design</span>
+      <div class="tags">
+        <span class="tag">Presentation</span>
+        <span class="tag">Images</span>
+        <span class="tag">Marketing</span>
+      </div>
+    </div>
+    <div class="tool-card" data-name="PowerPoint Designer" data-categories="Presentation">
+      <a href="#">PowerPoint Designer</a>
+      <span>Automatic slide design</span>
+      <div class="tags"><span class="tag">Presentation</span></div>
+    </div>
+    <div class="tool-card" data-name="Google Slides" data-categories="Presentation">
+      <a href="#">Google Slides</a>
+      <span>AI layout suggestions</span>
+      <div class="tags"><span class="tag">Presentation</span></div>
+    </div>
+    <div class="tool-card" data-name="Durable" data-categories="Presentation,Marketing,Images,Websites">
+      <a href="#">Durable</a>
+      <span>Quick AI pitch decks & websites</span>
+      <div class="tags">
+        <span class="tag">Presentation</span>
+        <span class="tag">Marketing</span>
+        <span class="tag">Images</span>
+        <span class="tag">Websites</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video / Animation -->
+  <div class="category">
+    <h2 class="video">Video / Animation</h2>
+    <div class="tool-card" data-name="InVideo" data-categories="Video,Marketing">
+      <a href="#">InVideo</a>
+      <span>Script-to-video templates</span>
+      <div class="tags"><span class="tag">Video</span><span class="tag">Marketing</span></div>
+    </div>
+    <div class="tool-card" data-name="Animaker" data-categories="Video,Marketing">
+      <a href="#">Animaker</a>
+      <span>Animated videos</span>
+      <div class="tags"><span class="tag">Video</span><span class="tag">Marketing</span></div>
+    </div>
+    <div class="tool-card" data-name="Pictory AI" data-categories="Video">
+      <a href="#">Pictory AI</a>
+      <span>Articles to videos</span>
+      <div class="tags"><span class="tag">Video</span></div>
+    </div>
+    <div class="tool-card" data-name="HeyGen" data-categories="Video">
+      <a href="#">HeyGen</a>
+      <span>AI avatars & videos</span>
+      <div class="tags"><span class="tag">Video</span></div>
+    </div>
+    <div class="tool-card" data-name="Renderforest" data-categories="Video,Marketing,Images">
+      <a href="#">Renderforest</a>
+      <span>Branding videos & visuals</span>
+      <div class="tags"><span class="tag">Video</span><span class="tag">Marketing</span><span class="tag">Images</span></div>
+    </div>
+    <div class="tool-card" data-name="Veo 3" data-categories="Video">
+      <a href="#">Veo 3</a>
+      <span>AI video creation</span>
+      <div class="tags"><span class="tag">Video</span></div>
+    </div>
+    <div class="tool-card" data-name="CodeDesign.ai" data-categories="Video,Marketing,Images">
+      <a href="#">CodeDesign.ai</a>
+      <span>Video + marketing content</span>
+      <div class="tags"><span class="tag">Video</span><span class="tag">Marketing</span><span class="tag">Images</span></div>
+    </div>
+  </div>
+
+  <!-- Audio / Music -->
+  <div class="category">
+    <h2 class="audio">Audio / Music</h2>
+    <div class="tool-card" data-name="ElevenLabs" data-categories="Audio">
+      <a href="#">ElevenLabs</a>
+      <span>AI voice synthesis</span>
+      <div class="tags"><span class="tag">Audio</span></div>
+    </div>
+    <div class="tool-card" data-name="Suno.ai" data-categories="Audio">
+      <a href="#">Suno.ai</a>
+      <span>AI-generated music</span>
+      <div class="tags"><span class="tag">Audio</span></div>
+    </div
